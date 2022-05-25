@@ -28,14 +28,14 @@ REPLY_MESSAGE=Config.REPLY_MESSAGE
 
 buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("Channel", url="https://t.me/TeamNexusX"),
+                InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("Source", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
             ]
          ]
 
@@ -49,7 +49,7 @@ async def search(client, query):
                 title="Deploy Your Own Radio Player",
                 thumb_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
                 photo_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @AsmSupport 👑</b>",
+                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@TeamNexusX | @NexusXSupport</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
