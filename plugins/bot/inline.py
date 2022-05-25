@@ -35,7 +35,7 @@ buttons = [
                 InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("Source", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("Source", url="https://t.me/NexusXSupport/12582"),
             ]
          ]
 
