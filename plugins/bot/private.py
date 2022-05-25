@@ -29,7 +29,7 @@ CHAT_ID=Config.CHAT_ID
 playlist=Config.playlist
 LOG_GROUP=Config.LOG_GROUP
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @AsmSafone 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Brook Radio Player** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop."
 HELP_TEXT = """
 💡 --**Setting Up**--:
 
@@ -63,7 +63,7 @@ HELP_TEXT = """
 \u2022 `/setvar` - set/change heroku configs
 
 © **Powered By** : 
-**@AsmSafone | @AsmSupport** 👑
+**@TeamNexusX | @NexusXSupport**
 """
 
 
@@ -71,7 +71,7 @@ HELP_TEXT = """
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.from_user.id not in Config.ADMINS and query.data != "help":
         await query.answer(
-            "You're Not Allowed! 🤣",
+            "You're Not Allowed !",
             show_alert=True
             )
         return
@@ -194,19 +194,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.lower() == "help":
         buttons = [
             [
-                InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("Search Songs Inline", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("Channel", url="https://t.me/TeamNexusX"),
+                InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("Eldorado", url="https://t.me/Eldoradoo"),
+                InlineKeyboardButton("Source Code", url="https://t.me/NexusXSupport/12582"),
             ],
             [
-                InlineKeyboardButton("BACK HOME", callback_data="home"),
-                InlineKeyboardButton("CLOSE MENU", callback_data="close"),
+                InlineKeyboardButton("Back Home", callback_data="home"),
+                InlineKeyboardButton("Close Menu", callback_data="close"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -221,18 +221,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.lower() == "home":
         buttons = [
             [
-                InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("Search Songs Inline", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("Channel", url="https://t.me/TeamNexusX"),
+                InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("ElDorado", url="https://t.me/ElDoradoo"),
+                InlineKeyboardButton("Source Code", url="https://t.me/NexusXSupport/12582"),
             ],
             [
-                InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
+                InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -259,18 +259,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
 async def start(client, message):
     buttons = [
             [
-                InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("Search Songs Inline", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("Channel", url="https://t.me/TeamNexusX"),
+                InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("Eldorado", url="https://t.me/Eldoradoo"),
+                InlineKeyboardButton("Source Code", url="https://t.me/NexusXSupport/12582"),
             ],
             [
-                InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
+                InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -283,19 +283,19 @@ async def start(client, message):
 async def help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("Search Songs Inline", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("Channel", url="https://t.me/TeamNexusX"),
+                InlineKeyboardButton("Support", url="https://t.me/NexusXSupport"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("Eldorado", url="https://t.me/Eldoradoo"),
+                InlineKeyboardButton("Source Code", url="https://t.me/NexusXSupport/12582"),
             ],
             [
-                InlineKeyboardButton("BACK HOME", callback_data="home"),
-                InlineKeyboardButton("CLOSE MENU", callback_data="close"),
+                InlineKeyboardButton("Back Home", callback_data="home"),
+                InlineKeyboardButton("Close Menu", callback_data="close"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
